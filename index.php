@@ -1,5 +1,15 @@
+<?php
+include("blank.php")
+?>
+
+
+
+
+
+
 <!DOCTYPE html>
 <html>
+
 
 <head>
   <!-- Basic -->
@@ -97,7 +107,7 @@
                     <a class="nav-link" href="testimonial.html">Testimonial</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
+                    <a class="nav-link" href="contact.php">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -622,47 +632,52 @@
   </section>
   <!-- end client section -->
 
-  <!-- contact section -->
-  <section class="contact_section layout_padding-bottom">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Get In Touch
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-7">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" placeholder="Full Name" />
-              </div>
-              <div>
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <input type="text" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="text" class="message-box" placeholder="Message" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
-          </div>
+  <!-- Contact section -->
+  <?php
+   formSubmit();
+?>
+
+<!-- <section class="contact_section layout_padding-bottom">
+  <div class="container">
+    <div class="heading_container">
+      <h2>
+        Get In Touch
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+        <div class="form_container">
+          <form action="./success.php" method="GET">
+            <div>
+              <input type="text" name="fullName" placeholder="Full Name" required/>
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="Email" required/>
+            </div>
+            <div>
+              <input type="text" name="phoneNumber" placeholder="Phone Number" required/>
+            </div>
+            <div>
+              <input type="text" name="message" class="message-box" placeholder="Message" required/>
+            </div>
+            <div class="btn_box">
+              <button type="submit">
+                SEND
+              </button>
+            </div>
+          </form>
         </div>
-        <div class="col-md-5">
-          <div class="img-box">
-            <img src="images/contact-img.jpg" alt="">
-          </div>
+      </div>
+      <div class="col-md-5">
+        <div class="img-box">
+          <img src="images/contact-img.jpg" alt="">
         </div>
       </div>
     </div>
-  </section>
-  <!-- end contact section -->
+  </div>
+</section>
+End contact section -->
+
 
   <!-- info section -->
   <section class="info_section ">
@@ -729,7 +744,7 @@
                 Useful link
               </h5>
               <div class="info_links_menu">
-                <a class="active" href="index.html">
+                <a class="active" href="index.php">
                   Home
                 </a>
                 <a href="about.html">

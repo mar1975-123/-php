@@ -1,3 +1,8 @@
+<?php
+include("success.php");
+
+?>
+
 <!DOCTYPE html>
 <html>
 
