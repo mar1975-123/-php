@@ -108,7 +108,7 @@
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <?php
-            slider();
+            slider ();
           ?>
         </div>
         <div class="carousel_btn-box">
